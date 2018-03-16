@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Heroine} from '../heroine';
+
 
 @Component({
   selector: 'app-heroines',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./heroines.component.css']
 })
 export class HeroinesComponent implements OnInit {
-
+  heroine: Heroine = {
+    id: 1,
+    name: 'シータ'
+  };
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }
